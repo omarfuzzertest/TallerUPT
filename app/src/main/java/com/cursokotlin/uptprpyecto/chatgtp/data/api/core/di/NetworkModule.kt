@@ -33,7 +33,7 @@ class NetworkModule {
 
 
         return Retrofit.Builder()
-            .baseUrl("https://api.openai.com/v1/")
+            .baseUrl("https://openai80.p.rapidapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

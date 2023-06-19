@@ -14,7 +14,8 @@ interface ApiService {
 
     @Headers(
         "Content-Type: application/json",
-        "Authorization: Bearer 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"
+        "X-RapidAPI-Key: 35ac5be120msh2ebd9719d65221ep1de8fejsn99a7e12abc0c",
+        "X-RapidAPI-Host: openai80.p.rapidapi.com"
     )
     @POST("chat/completions")
     suspend fun preguntaChatGTP(@Body preguntaAChatGTPRequest: PreguntaAChatGTPRequest): Response<PreguntaAChatGTPResponse>
