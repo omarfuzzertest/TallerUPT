@@ -108,7 +108,7 @@ fun FooterScreen(modifier: Modifier, chatGtpViewModel: ChatGTPViewModel) {
                     unfocusedIndicatorColor = Color.Transparent
                 )
             )
-            IconButton(onClick = { chatGtpViewModel.onPreguntarToChatGTP() }, modifier = Modifier.weight(1f), enabled = isBotonEnable) {
+            IconButton(onClick = { chatGtpViewModel.onPreguntarToChatGTPWithFlow() }, modifier = Modifier.weight(1f), enabled = isBotonEnable) {
                 Icon(
                     imageVector = Icons.Default.ArrowUpward,
                     contentDescription = "")
